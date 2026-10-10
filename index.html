@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c1726">
+  <meta name="description" content="Ein kleiner, offline nutzbarer Fenster-Rechner mit 10 Positionen.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Fenster-Rechner">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./app.css">
+  <title>Fenster-Rechner</title>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">▦</span><span>MEIN MINI-TOOL</span></div>
+      <h1>Fenster-Rechner</h1>
+      <p class="subtitle">10 Positionen. Einfache Berechnung. Alles auf einen Blick.</p>
+      <div class="status" role="status"><span class="status-dot" aria-hidden="true"></span><span id="offline-status">App wird vorbereitet …</span></div>
+    </header>
+
+    <section class="calculator" aria-label="Fenster-Kalkulation">
+      <div class="section-header">
+        <h2>Positionen</h2>
+        <span class="row-count">10 Zeilen</span>
+      </div>
+      <div class="column-labels table-grid" aria-hidden="true">
+        <span>Fenster</span><span>Anzahl</span><span>Preis</span><span>Ergebnis</span>
+      </div>
+      <div id="rows" class="rows"></div>
+      <div class="total" aria-live="polite" aria-atomic="true">
+        <div>
+          <span class="total-eyebrow">SUMME ALLER POSITIONEN</span>
+          <strong>Gesamt</strong>
+        </div>
+        <output id="grand-total" class="total-value">0,00 €</output>
+      </div>
+      <p id="validation-message" class="validation-message" hidden>Bitte markierte Zahlen oder Preise korrigieren.</p>
+    </section>
+    <div class="controls">
+      <span id="save-status" class="save-status">Eingaben werden automatisch gespeichert</span>
+      <button type="button" id="reset-button" class="reset-button">Zurücksetzen</button>
+    </div>
+    <p class="footnote">Deine Eingaben bleiben auf diesem Gerät. Es werden keine Daten an einen Server gesendet.</p>
+  </main>
+</body>
+</html>

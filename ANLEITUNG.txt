@@ -1,0 +1,42 @@
+FENSTER-RECHNER – Deine kostenlose iPhone-Mini-App
+=================================================
+
+Funktionen
+- 10 Zeilen, in jeder Zeile Dropdown Fenster 1 bis Fenster 5
+- Anzahl und Preis (Standard: 10 Euro) frei eingeben
+- Ergebnis jeder Zeile = Anzahl x Preis
+- Ganz unten Summe aller Zeilen
+- Eingaben automatisch und nur lokal auf dem jeweiligen Gerät gespeichert
+- Funktioniert nach der ersten Online-Installation auch ohne Internet
+
+WICHTIG: Die ZIP-Datei ist die komplette App. Sie muss einmal als kleine
+Website über HTTPS veröffentlicht werden, damit iOS sie auf den
+Home-Bildschirm installieren und für Offline-Nutzung vorbereiten kann.
+Das kostet mit einem kostenlosen statischen Webhoster nichts.
+
+Veröffentlichung mit GitHub Pages (kostenlos):
+1. Bei github.com ein Konto erstellen oder anmelden.
+2. Neues öffentliches Repository erstellen, z.B. 'fenster-rechner'.
+3. Alle Dateien und den Ordner 'icons' aus dieser ZIP-Datei in das
+   Hauptverzeichnis des Repositorys hochladen (nicht die ZIP-Datei selbst).
+4. Unter Settings > Pages als Quelle 'Deploy from a branch', Branch 'main'
+   und Ordner '/ (root)' einstellen und speichern.
+5. Einige Minuten warten und die dort angezeigte HTTPS-Adresse öffnen.
+
+Auf deinem iPhone:
+1. HTTPS-Adresse in SAFARI öffnen (online, beim allerersten Mal).
+2. Warten, bis oben 'Offline-Nutzung bereit' erscheint.
+3. Auf das Teilen-Symbol tippen und 'Zum Home-Bildschirm' auswählen.
+4. Die App über das neue Startbildschirm-Icon öffnen.
+5. Flugmodus einschalten und testen: Die App funktioniert offline.
+
+Hinweise:
+- 'Preis' erlaubt z.B. 10 oder 10,50 oder 10.50 (jeweils Euro).
+- 'Anzahl' ist eine ganze, nichtnegative Zahl.
+- Ohne Anzahl steht in einer Zeile ein Strich; die Zeile zählt als 0.
+- Der Speicher ist geräte- und browserabhängig. Werden Safari-Websitedaten
+  gelöscht, können auch die gespeicherten Eingaben verloren gehen.
+- Offline klappt nur, solange die App-Dateien im iPhone-Cache sind.
+- Beim Aktualisieren der veröffentlichten App kann kurzzeitig Internet
+  erforderlich sein. Keine Synchronisierung zwischen Geräten.
+- Die App sendet keine eingegebenen Daten an einen Server.
